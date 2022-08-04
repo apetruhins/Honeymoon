@@ -26,8 +26,7 @@ struct GuideView: View {
                 
                 Text("Get Started!")
                     .fontWeight(.black)
-                    .font(.largeTitle)
-                    .foregroundColor(.pink)
+                    .modifier(TitleModifier())
                 
                 Text("Discover and pick the perfect destination for your romantic honeymoon!")
                     .lineLimit(nil)
@@ -50,14 +49,7 @@ struct GuideView: View {
                     self.presentationMode.wrappedValue.dismiss()
                 } label: {
                     Text("Continue".uppercased())
-                        .font(.headline)
-                        .padding()
-                        .frame(minWidth: 0, maxWidth: .infinity)
-                        .background(
-                            Capsule()
-                                .fill(Color.pink)
-                                .foregroundColor(.white)
-                        )
+                        .modifier(ButtonModifier())
                 }
                 
             } //: VStack

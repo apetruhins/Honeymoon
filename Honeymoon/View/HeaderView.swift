@@ -11,6 +11,7 @@ struct HeaderView: View {
     
     // MARK: - Properties
     
+    @State var showInfoView: Bool = false
     @State var showGuideView: Bool = false
     
     // MARK: - Body
@@ -18,7 +19,7 @@ struct HeaderView: View {
     var body: some View {
         HStack {
             Button {
-                
+                self.showInfoView.toggle()
             } label: {
                 Image(systemName: "info.circle")
                     .font(.system(size: 24, weight: .regular))
@@ -41,6 +42,9 @@ struct HeaderView: View {
                     .font(.system(size: 24, weight: .regular))
             }
             .accentColor(.primary)
+            .sheet(isPresented: $showInfoView) {
+                InfoView()
+            }
             .sheet(isPresented: $showGuideView) {
                 GuideView()
             }
