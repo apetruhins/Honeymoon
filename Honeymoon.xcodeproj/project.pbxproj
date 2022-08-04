@@ -19,6 +19,9 @@
 		FAA941D3289B117C00AC7D14 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA941D2289B117C00AC7D14 /* CardView.swift */; };
 		FAA941D5289B142D00AC7D14 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA941D4289B142D00AC7D14 /* HeaderView.swift */; };
 		FAA941D7289B15F400AC7D14 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA941D6289B15F400AC7D14 /* FooterView.swift */; };
+		FAF7C7F9289C100000180E31 /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7C7F8289C100000180E31 /* HeaderComponent.swift */; };
+		FAF7C7FB289C115700180E31 /* GuideComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7C7FA289C115700180E31 /* GuideComponent.swift */; };
+		FAF7C7FD289C130800180E31 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7C7FC289C130800180E31 /* GuideView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		FAA941D2289B117C00AC7D14 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FAA941D4289B142D00AC7D14 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		FAA941D6289B15F400AC7D14 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		FAF7C7F8289C100000180E31 /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
+		FAF7C7FA289C115700180E31 /* GuideComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideComponent.swift; sourceTree = "<group>"; };
+		FAF7C7FC289C130800180E31 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 		FA24B6F2289845510017B826 /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
+				FAF7C7F7289C0FE400180E31 /* Component */,
 				FAA941CD289B10A100AC7D14 /* Model */,
 				FAA941CE289B111400AC7D14 /* Data */,
 				FAA941D1289B116C00AC7D14 /* View */,
@@ -121,8 +128,18 @@
 				FAA941D2289B117C00AC7D14 /* CardView.swift */,
 				FAA941D4289B142D00AC7D14 /* HeaderView.swift */,
 				FAA941D6289B15F400AC7D14 /* FooterView.swift */,
+				FAF7C7FC289C130800180E31 /* GuideView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FAF7C7F7289C0FE400180E31 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				FAF7C7F8289C100000180E31 /* HeaderComponent.swift */,
+				FAF7C7FA289C115700180E31 /* GuideComponent.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,9 +219,12 @@
 				FAA941D7289B15F400AC7D14 /* FooterView.swift in Sources */,
 				FAA941D5289B142D00AC7D14 /* HeaderView.swift in Sources */,
 				FAA941CC289B109A00AC7D14 /* DestinationModel.swift in Sources */,
+				FAF7C7F9289C100000180E31 /* HeaderComponent.swift in Sources */,
 				FA24B6F6289845510017B826 /* ContentView.swift in Sources */,
 				FA24B6F4289845510017B826 /* HoneymoonApp.swift in Sources */,
 				FAA941D3289B117C00AC7D14 /* CardView.swift in Sources */,
+				FAF7C7FB289C115700180E31 /* GuideComponent.swift in Sources */,
+				FAF7C7FD289C130800180E31 /* GuideView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
