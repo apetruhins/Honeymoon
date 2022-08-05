@@ -15,6 +15,7 @@ struct ContentView: View {
     
     @State private var showAlert: Bool = false
     @State private var lastCardIndex: Int = 1
+    @State private var cardRemovalTransition: AnyTransition = AnyTransition.trailingBottom
     
     @GestureState private var dragState: DragState = .inactive
     
@@ -78,7 +79,20 @@ struct ContentView: View {
                                     default:
                                         break
                                     }
-                                }) //: Updating
+                                }) //: updating
+                                .onChanged({ value in
+                                    guard case .second(true, let drag?) = value else {
+                                        return
+                                    }
+                                    
+                                    if drag.translation.width < -self.dragAreaThreshold {
+                                        self.cardRemovalTransition = .leadingBottom
+                                    }
+                                    
+                                    if drag.translation.width > self.dragAreaThreshold {
+                                        self.cardRemovalTransition = .trailingBottom
+                                    }
+                                }) //: onChanged
                                 .onEnded({ value in
                                     
                                     guard case .second(true, let drag?) = value else {
@@ -87,12 +101,14 @@ struct ContentView: View {
                                     
                                     if drag.translation.width < -self.dragAreaThreshold || drag.translation.width > self.dragAreaThreshold {
                                         
+                                        playSound(sound: "sound-rise")
                                         self.moveCards()
                                         
                                     }
                                     
-                                }) //: OnEnded
+                                }) //: onEnded
                         ) //: Gesture
+                        .transition(self.cardRemovalTransition)
                 }
             }
             .padding(.horizontal)
