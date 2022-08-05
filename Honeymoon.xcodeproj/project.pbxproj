@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA1D8ECA289C645A005238F8 /* DragState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D8EC9289C6459005238F8 /* DragState.swift */; };
+		FA1D8ECC289D0BDD005238F8 /* SymbolModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D8ECB289D0BDD005238F8 /* SymbolModifier.swift */; };
 		FA24B6F4289845510017B826 /* HoneymoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24B6F3289845510017B826 /* HoneymoonApp.swift */; };
 		FA24B6F6289845510017B826 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24B6F5289845510017B826 /* ContentView.swift */; };
 		FA24B6F8289845560017B826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA24B6F7289845560017B826 /* Assets.xcassets */; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA1D8EC9289C6459005238F8 /* DragState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragState.swift; sourceTree = "<group>"; };
+		FA1D8ECB289D0BDD005238F8 /* SymbolModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolModifier.swift; sourceTree = "<group>"; };
 		FA24B6F0289845510017B826 /* Honeymoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Honeymoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA24B6F3289845510017B826 /* HoneymoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonApp.swift; sourceTree = "<group>"; };
 		FA24B6F5289845510017B826 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA1D8EC8289C6441005238F8 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				FA1D8EC9289C6459005238F8 /* DragState.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
 		FA24B6E7289845510017B826 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +92,7 @@
 		FA24B6F2289845510017B826 /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
+				FA1D8EC8289C6441005238F8 /* Enum */,
 				FAF7C7F7289C0FE400180E31 /* Component */,
 				FAF7C802289C368500180E31 /* Modifier */,
 				FAA941CD289B10A100AC7D14 /* Model */,
@@ -155,6 +168,7 @@
 			children = (
 				FAF7C800289C363900180E31 /* TitleModifier.swift */,
 				FAF7C803289C37E800180E31 /* ButtonModifier.swift */,
+				FA1D8ECB289D0BDD005238F8 /* SymbolModifier.swift */,
 			);
 			path = Modifier;
 			sourceTree = "<group>";
@@ -239,10 +253,12 @@
 				FAA941D5289B142D00AC7D14 /* HeaderView.swift in Sources */,
 				FAA941CC289B109A00AC7D14 /* DestinationModel.swift in Sources */,
 				FAF7C804289C37E800180E31 /* ButtonModifier.swift in Sources */,
+				FA1D8ECA289C645A005238F8 /* DragState.swift in Sources */,
 				FAF7C7F9289C100000180E31 /* HeaderComponent.swift in Sources */,
 				FA24B6F6289845510017B826 /* ContentView.swift in Sources */,
 				FA24B6F4289845510017B826 /* HoneymoonApp.swift in Sources */,
 				FAA941D3289B117C00AC7D14 /* CardView.swift in Sources */,
+				FA1D8ECC289D0BDD005238F8 /* SymbolModifier.swift in Sources */,
 				FAF7C7FB289C115700180E31 /* GuideComponent.swift in Sources */,
 				FAF7C7FD289C130800180E31 /* GuideView.swift in Sources */,
 			);
